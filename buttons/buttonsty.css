@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(125, 124, 124);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:25px;
+    font-family: "Kanit", sans-serif;
+}
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(184, 184, 184);
+    border-radius: 10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+.box p{
+    position: absolute;
+    margin-bottom: 80%;
+    font-size: 70px;
+    font-weight: 700;
+    color: rgb(250, 250, 250);
+}
+.box .item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.box .item li{
+    list-style: none;
+    margin: 0 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 20px 20px;
+    position: relative;
+    overflow: hidden;
+}
+.box .item li::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    overflow: hidden;
+    transition:all ease 0.3s;
+}
+.box .item li:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+.box .item li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 9;
+}
+.box .item li:hover a{
+    color: white;
+}
