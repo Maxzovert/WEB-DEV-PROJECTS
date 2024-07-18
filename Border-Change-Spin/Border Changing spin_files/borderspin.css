@@ -1,0 +1,21 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(55, 233, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 500px;
+    width: 500px;
+    background-color: rgb(156, 84, 251);
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

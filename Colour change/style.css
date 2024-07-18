@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.maincon{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(255, 180, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.maincon .con{
+    height: 300px;
+    width: 300px;
+    background: #fa5d5d;
+}
+.maincon h1{
+    font-size: 30px;
+    margin:30px 0;
+}
+.maincon .btn{
+    height: 100px;
+    width: 300px;
+    background: rgb(253, 47, 47);
+    margin: 5px 0;
+    border-radius: 50px;
+    cursor: pointer;
+}
+button{
+    font-size: 50px;
+}
