@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--body-color);
+}
+header{
+    height: 10vh;
+}
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3em;
+    color: var( --primary-color);
+    margin-left:30px ;
+    letter-spacing: 3px;
+}
+.nav-ul{
+    display: flex;
+}
+.nav-item{
+    list-style: none;
+    margin:0px 35px ;
+    font-family: "Open Sans", sans-serif;
+    font-weight:600;
+    font-size: 1.5em;
+    color:var(--seconcry-color);
+    cursor: pointer;
+}
+.nav-ul .nav-item:hover{
+    color: var( --primary-color)
+}
+
+#icon{
+    width: 35px;
+    margin-right:25px;
+    cursor:pointer;
+}
+.con{
+    display: flex;
+    justify-content: space-between;
+}
+.con .left{
+    height: 90vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left .name-txt{
+    margin-left: 25px;
+    padding: 0px 12px;
+    font-family: "Open Sans", sans-serif;
+    font-weight:600;
+    font-size: 4em; 
+    color: var(--seconcry-color);
+}
+.left .name-txt span{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight:600;
+    letter-spacing: 3px;
+    font-size: 1.1em; 
+    color: var( --primary-color);
+}
+.left .disc-txt{
+    margin-left: 32px;
+    font-size: 1em;
+    font-family: "Open Sans", sans-serif;
+    color: var(--seconcry-color);
+}
+.btn{
+    background: var(--btn-color);
+    border: none;
+    outline: none;
+    width: 100px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: var(--body-color);
+    margin-left: 30px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.left .so-nav{
+    bottom: 0;
+    display: flex;
+    margin-left: 30px;
+    margin-top: 12px;
+}
+.left .so-nav li{
+    list-style: none;
+    padding: 0 50px 0px 0px;
+}
+.left .so-nav img{
+    width: 35px;
+    bottom: 0;
+}
+.btn:hover{
+    padding: 6px 11px;
+}
+.con .right{
+    height: 90vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.right .one{
+    position: absolute;
+    height: 70%;
+    bottom: 0;
+    transition: bottom 1s;
+}
+.right .two{
+    position: absolute;
+    height: 70%;
+    bottom: 0;
+}
+.con .right:hover .one{
+    bottom: 40px;
+}
+
+:root{
+    --primary-color:orangered;
+    --seconcry-color:rgb(151, 150, 150);
+    --body-color:white;
+    --btn-color : orangered;
+}
+
+.dark-theme{
+    --primary-color:orangered;
+    --seconcry-color:white;
+    --body-color:black;
+    --btn-color : white;
+}
